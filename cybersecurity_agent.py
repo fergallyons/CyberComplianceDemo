@@ -53,16 +53,14 @@ def get_branding_header_html(title_text: str = "Security Report") -> str:
 '''
 
 # Import custom modules
-from auth_system import AuthenticationSystem, StreamlitAuth, User, UserRole, Organization
-from nis2_compliance import NIS2ComplianceModule, SecurityIncident, IncidentSeverity, IncidentStatus
-from user_management import UserManagementInterface
-from nis2_scope_assessment import NIS2ScopeAssessment
-from incident_reporting import IncidentReportingModule
-from reporting_entities import ReportingEntitiesInterface
-from security_controls import SecurityControlsInterface
-from risk_management import RiskManagementSystem, RiskManagementInterface
-from nis2_scope_assessment import NIS2ScopeAssessment
-from reporting_entities import ReportingEntitiesModule
+from src.core.auth_system import AuthenticationSystem, StreamlitAuth, User, UserRole, Organization
+from src.modules.nis2_compliance import NIS2ComplianceModule, SecurityIncident, IncidentSeverity, IncidentStatus
+from src.interfaces.user_management import UserManagementInterface
+from src.modules.nis2_scope_assessment import NIS2ScopeAssessment
+from src.modules.incident_reporting import IncidentReportingModule
+from src.interfaces.reporting_entities import ReportingEntitiesInterface
+from src.modules.security_controls import SecurityControlsInterface
+from src.modules.risk_management import RiskManagementSystem, RiskManagementInterface
 
 # Load environment variables
 load_dotenv()
@@ -88,7 +86,7 @@ class CybersecurityAgent:
         self.incident_reporting = IncidentReportingModule()
         self.reporting_entities = ReportingEntitiesInterface()
         self.security_controls = SecurityControlsInterface()
-        self.risk_management = RiskManagementSystem()
+        self.risk_management = RiskManagementInterface(RiskManagementSystem())
         
         # Set up plotting style
         plt.style.use('seaborn-v0_8')
@@ -951,13 +949,12 @@ def main():
     #     ...
     
     # Main content tabs
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
         "📊 Dashboard", 
         "🚨 Incident Reporting", 
         "🛡️ Security Controls", 
         "🛡️ Risk Management",
         "🔍 Scope Assessment", 
-        "🏛️ Reporting Entities", 
         "⚙️ Settings"
     ])
     
@@ -1267,23 +1264,23 @@ def main():
             else:
                 st.warning("⚠️ Scope Assessment Required")
                 st.info("Complete a NIS2 scope assessment to determine your obligations.")
-                if st.button("🔍 Start Scope Assessment", use_container_width=True):
+                if st.button("🔍 Start Scope Assessment", key="dashboard_start_scope", use_container_width=True):
                     st.switch_page("cybersecurity_agent.py")
         
         with col2:
             # Quick actions
             st.markdown("**Quick Actions:**")
             
-            if st.button("📝 Report New Incident", use_container_width=True):
+            if st.button("📝 Report New Incident", key="dashboard_report_incident", use_container_width=True):
                 st.switch_page("cybersecurity_agent.py")
             
-            if st.button("🛡️ Assess Controls", use_container_width=True):
+            if st.button("🛡️ Assess Controls", key="dashboard_assess_controls", use_container_width=True):
                 st.switch_page("cybersecurity_agent.py")
             
-            if st.button("🛡️ Manage Risks", use_container_width=True):
+            if st.button("🛡️ Manage Risks", key="dashboard_manage_risks", use_container_width=True):
                 st.switch_page("cybersecurity_agent.py")
             
-            if st.button("🔄 Refresh Data", use_container_width=True):
+            if st.button("🔄 Refresh Data", key="dashboard_refresh_data", use_container_width=True):
                 st.rerun()
         
         # Footer
@@ -1310,10 +1307,6 @@ def main():
         agent.nis2_scope_assessment.display_main_interface(str(current_org.id))
     
     with tab6:
-        # Reporting Entities content - no header needed
-        agent.reporting_entities.display_main_interface()
-    
-    with tab7:
         # Settings content - no header needed
         if current_user.role.value in ['admin', 'partner']:
             if current_user.role.value == 'admin':
@@ -1375,7 +1368,7 @@ def main():
                             To switch to managing **{selected_org.name}**, click the button below.
                             """)
                             
-                            if st.button(f"🔄 Switch to {selected_org.name}", type="primary", use_container_width=True):
+                            if st.button(f"🔄 Switch to {selected_org.name}", key=f"admin_switch_to_{selected_org.id}", type="primary", use_container_width=True):
                                 # Store the selected organization in session state
                                 st.session_state.admin_selected_org_id = selected_org.id
                                 st.session_state.admin_selected_org_name = selected_org.name
@@ -1417,7 +1410,7 @@ def main():
                     col1, col2 = st.columns([1, 1])
                     
                     with col1:
-                        if st.button("🔄 Refresh All Organization Logos", use_container_width=True, type="secondary"):
+                        if st.button("🔄 Refresh All Organization Logos", key="admin_refresh_logos", use_container_width=True, type="secondary"):
                             with st.spinner("🔄 Fetching logos from the web..."):
                                 results = auth_system.refresh_organization_logos()
                                 st.success("✅ Logo refresh completed!")
@@ -1446,7 +1439,7 @@ def main():
                         st.markdown("### 🏠 Return to My Organization")
                         st.info(f"You are currently managing **{st.session_state.get('admin_selected_org_name', 'Unknown')}** instead of your own organization.")
                         
-                        if st.button("🏠 Return to My Organization", type="secondary", use_container_width=True):
+                        if st.button("🏠 Return to My Organization", key="admin_return_to_my_org", type="secondary", use_container_width=True):
                             st.session_state.admin_selected_org_id = None
                             st.session_state.admin_selected_org_name = None
                             st.success("✅ Returned to your organization context")
@@ -1897,7 +1890,7 @@ def main():
                             To switch to managing **{selected_org.name}**, click the button below.
                             """)
                             
-                            if st.button(f"🔄 Switch to {selected_org.name}", type="primary"):
+                            if st.button(f"🔄 Switch to {selected_org.name}", key=f"partner_switch_to_{selected_org.id}", type="primary"):
                                 # Store the selected organization in session state
                                 st.session_state.partner_selected_org_id = selected_org.id
                                 st.session_state.partner_selected_org_name = selected_org.name
@@ -1911,7 +1904,7 @@ def main():
                         # Add return button if partner is managing a different organization
                         partner_selected_org_id = st.session_state.get('partner_selected_org_id')
                         if partner_selected_org_id and partner_selected_org_id != streamlit_auth.get_current_organization().id:
-                            if st.button("🏠 Return to My Organization", type="secondary"):
+                            if st.button("🏠 Return to My Organization", key="partner_return_to_my_org", type="secondary"):
                                 st.session_state.partner_selected_org_id = None
                                 st.session_state.partner_selected_org_name = None
                                 st.success("✅ Returned to your organization context")
@@ -1919,6 +1912,15 @@ def main():
                     
                     else:
                         st.warning("No organizations accessible to you as a partner.")
+                
+                st.markdown("---")
+                
+                # Reporting Entities Section
+                st.subheader("🏛️ Reporting Entities")
+                st.info("Manage compliance reporting entities and their configurations.")
+                
+                # Display the reporting entities interface
+                agent.reporting_entities.display_main_interface()
                 
                 st.markdown("---")
         else:

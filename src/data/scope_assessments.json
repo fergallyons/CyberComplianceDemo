@@ -122,5 +122,53 @@
       "Implement advanced threat detection",
       "Develop crisis communication plan"
     ]
+  },
+  "4": {
+    "organization_id": "4",
+    "organization_name": "Bank of Ireland",
+    "assessment_date": "2025-08-19T13:52:06.392955",
+    "sector_type": "essential",
+    "organization_size": "large",
+    "in_scope": true,
+    "reporting_obligations": [
+      "Report significant incidents within 24 hours of detection",
+      "Submit initial incident report",
+      "Provide intermediate updates as required",
+      "Submit final incident report",
+      "Maintain incident records for at least 3 years",
+      "Enhanced reporting requirements",
+      "Regular security assessments",
+      "Compliance audits"
+    ],
+    "assessment_score": 70,
+    "risk_factors": [
+      "High critical infrastructure dependency exposure",
+      "High supply chain criticality exposure",
+      "High market dominance exposure",
+      "High user base size exposure",
+      "Critical infrastructure dependency",
+      "Supply chain criticality"
+    ],
+    "recommendations": [
+      "Implement NIS2 compliance framework",
+      "Establish incident response procedures",
+      "Conduct regular security assessments",
+      "Train staff on incident reporting",
+      "Develop business continuity plans",
+      "Implement enhanced security controls",
+      "Establish 24/7 security monitoring",
+      "Conduct penetration testing",
+      "Implement zero-trust architecture"
+    ],
+    "next_steps": [
+      "Register with relevant national authority",
+      "Appoint NIS2 compliance officer",
+      "Develop incident response plan",
+      "Implement security monitoring tools",
+      "Conduct gap analysis against NIS2 requirements",
+      "Establish security operations center",
+      "Implement advanced threat detection",
+      "Develop crisis communication plan"
+    ]
   }
 }

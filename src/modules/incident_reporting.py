@@ -1651,7 +1651,7 @@ This incident is now resolved and closed.
                     help="Display name for outgoing emails"
                 )
             
-            if st.button("💾 Save Email Configuration"):
+            if st.button("💾 Save Email Configuration", key="incident_save_email_config"):
                 # Update email configuration
                 self.email_config.smtp_server = smtp_server
                 self.email_config.smtp_port = smtp_port
@@ -1681,7 +1681,7 @@ This incident is now resolved and closed.
             help="Send a test email to verify configuration"
         )
         
-        if st.button("📧 Send Test Email") and test_email:
+        if st.button("📧 Send Test Email", key="incident_send_test_email") and test_email:
             if self._send_test_email(test_email):
                 st.success("✅ Test email sent successfully!")
             else:

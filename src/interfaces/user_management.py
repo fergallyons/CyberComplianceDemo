@@ -9,7 +9,7 @@ import sqlite3
 from datetime import datetime
 from typing import Dict, List, Optional
 import plotly.express as px
-from auth_system import AuthenticationSystem, UserRole, User, Organization, StreamlitAuth
+from core.auth_system import AuthenticationSystem, UserRole, User, Organization, StreamlitAuth
 
 class UserManagementInterface:
     """User management interface for administrators and partners."""
@@ -57,15 +57,15 @@ class UserManagementInterface:
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            if st.button("➕ Create New User", type="primary"):
+            if st.button("➕ Create New User", key="user_create_new", type="primary"):
                 st.session_state.show_create_user = True
         
         with col2:
-            if st.button("📝 Edit Users"):
+            if st.button("📝 Edit Users", key="user_edit_users"):
                 st.session_state.show_edit_users = True
         
         with col3:
-            if st.button("🗑️ Delete Users"):
+            if st.button("🗑️ Delete Users", key="user_delete_users"):
                 st.session_state.show_delete_users = True
         
         # Create new user form
@@ -138,7 +138,7 @@ class UserManagementInterface:
                 else:
                     st.error("Failed to create user. Please try again.")
         
-        if st.button("❌ Cancel"):
+        if st.button("❌ Cancel", key="user_create_cancel"):
             st.session_state.show_create_user = False
             st.rerun()
     
@@ -331,7 +331,7 @@ class UserManagementInterface:
         except Exception as e:
             st.error(f"Error loading users for editing: {str(e)}")
         
-        if st.button("❌ Close Edit Interface"):
+        if st.button("❌ Close Edit Interface", key="user_close_edit_users"):
             st.session_state.show_edit_users = False
             st.rerun()
     
@@ -407,7 +407,7 @@ class UserManagementInterface:
         except Exception as e:
             st.error(f"Error loading users for deletion: {str(e)}")
         
-        if st.button("❌ Close Delete Interface"):
+        if st.button("❌ Close Delete Interface", key="user_close_delete_users"):
             st.session_state.show_delete_users = False
             st.rerun()
     
@@ -425,15 +425,15 @@ class UserManagementInterface:
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            if st.button("➕ Create New Organization", type="primary"):
+            if st.button("➕ Create New Organization", key="org_create_new", type="primary"):
                 st.session_state.show_create_org = True
         
         with col2:
-            if st.button("📝 Edit Organizations"):
+            if st.button("📝 Edit Organizations", key="org_edit_orgs"):
                 st.session_state.show_edit_orgs = True
         
         with col3:
-            if st.button("🗑️ Delete Organizations"):
+            if st.button("🗑️ Delete Organizations", key="org_delete_orgs"):
                 st.session_state.show_delete_orgs = True
         
         # Create new organization form
@@ -509,7 +509,7 @@ class UserManagementInterface:
                 else:
                     st.error("Failed to create organization. The name or domain may already exist, or there was a database error.")
         
-        if st.button("❌ Cancel"):
+        if st.button("❌ Cancel", key="user_create_org_cancel"):
             st.session_state.show_create_org = False
             st.rerun()
     
@@ -670,7 +670,7 @@ class UserManagementInterface:
                     else:
                         st.error("Failed to update organization. The name or domain may already exist, or there was a database error.")
         
-        if st.button("❌ Close Edit Interface"):
+        if st.button("❌ Close Edit Interface", key="org_close_edit"):
             st.session_state.show_edit_orgs = False
             st.rerun()
     
@@ -784,7 +784,7 @@ class UserManagementInterface:
             
             # Delete button
             if confirm_name == selected_org.name and confirm_delete:
-                if st.button("🗑️ DELETE ORGANIZATION", type="primary", help="This will permanently delete the organization"):
+                if st.button("🗑️ DELETE ORGANIZATION", key="org_delete_confirm", type="primary", help="This will permanently delete the organization"):
                     try:
                         # Perform deletion
                         success = self.auth_system.delete_organization(selected_org.id, force_delete=force_delete)
@@ -804,7 +804,7 @@ class UserManagementInterface:
                 if not confirm_delete:
                     st.error("Please confirm that you understand the action cannot be undone")
         
-        if st.button("❌ Close Delete Interface"):
+        if st.button("❌ Close Delete Interface", key="org_close_delete"):
             st.session_state.show_delete_orgs = False
             st.rerun()
     

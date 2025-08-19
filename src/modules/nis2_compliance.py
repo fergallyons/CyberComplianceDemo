@@ -582,7 +582,7 @@ The organization maintains a robust security incident management framework that 
         
         with tab2:
             st.write("Generate NIS2 Article 23 compliance report:")
-            if st.button("Generate Report"):
+            if st.button("Generate Report", key="compliance_generate_report"):
                 report = self.generate_nis2_article23_report(
                     incidents, 
                     organization.name, 
@@ -593,7 +593,7 @@ The organization maintains a robust security incident management framework that 
                 # Export options
                 col1, col2, col3 = st.columns(3)
                 with col1:
-                    if st.button("📥 Download Markdown"):
+                    if st.button("📥 Download Markdown", key="compliance_download_md"):
                         st.download_button(
                             label="Download Markdown",
                             data=report,
@@ -601,7 +601,7 @@ The organization maintains a robust security incident management framework that 
                             mime="text/markdown"
                         )
                 with col2:
-                    if st.button("📥 Download HTML"):
+                    if st.button("📥 Download HTML", key="compliance_download_html"):
                         html_data = self.export_compliance_report(report, "html")
                         st.download_button(
                             label="Download HTML",
@@ -610,7 +610,7 @@ The organization maintains a robust security incident management framework that 
                             mime="text/html"
                         )
                 with col3:
-                    if st.button("📥 Download JSON"):
+                    if st.button("📥 Download JSON", key="compliance_download_json"):
                         json_data = self.export_compliance_report(report, "json")
                         st.download_button(
                             label="Download JSON",
@@ -621,7 +621,7 @@ The organization maintains a robust security incident management framework that 
         
         with tab3:
             st.write("Export incident data:")
-            if st.button("Export to CSV"):
+            if st.button("Export to CSV", key="compliance_export_csv"):
                 # Convert incidents to DataFrame for export
                 export_data = []
                 for incident in incidents:

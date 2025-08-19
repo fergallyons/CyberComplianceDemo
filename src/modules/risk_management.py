@@ -133,7 +133,97 @@ class RiskManagementSystem:
         try:
             with open(self.data_file, 'r') as f:
                 data = json.load(f)
-                risks = [Risk(**risk_data) for risk_data in data.get('risks', [])]
+                
+                # Convert risk data back to proper Risk objects with enum conversion
+                risks = []
+                for risk_data in data.get('risks', []):
+                    # Convert string enum values back to enum objects
+                    if 'category' in risk_data and isinstance(risk_data['category'], str):
+                        category_str = risk_data['category']
+                        # Handle both 'RiskCategory.OPERATIONAL' and 'OPERATIONAL' formats
+                        if '.' in category_str:
+                            category_str = category_str.split('.')[-1]
+                        try:
+                            risk_data['category'] = RiskCategory(category_str)
+                        except ValueError:
+                            # Fallback to default if invalid
+                            risk_data['category'] = RiskCategory.TECHNICAL
+                    
+                    if 'status' in risk_data and isinstance(risk_data['status'], str):
+                        status_str = risk_data['status']
+                        if '.' in status_str:
+                            status_str = status_str.split('.')[-1]
+                        try:
+                            risk_data['status'] = RiskStatus(status_str)
+                        except ValueError:
+                            risk_data['status'] = RiskStatus.IDENTIFIED
+                    
+                    if 'current_likelihood' in risk_data and isinstance(risk_data['current_likelihood'], str):
+                        likelihood_str = risk_data['current_likelihood']
+                        if '.' in likelihood_str:
+                            likelihood_str = likelihood_str.split('.')[-1]
+                        try:
+                            risk_data['current_likelihood'] = RiskLikelihood(likelihood_str)
+                        except ValueError:
+                            risk_data['current_likelihood'] = RiskLikelihood.MEDIUM
+                    
+                    if 'current_impact' in risk_data and isinstance(risk_data['current_impact'], str):
+                        impact_str = risk_data['current_impact']
+                        if '.' in impact_str:
+                            impact_str = impact_str.split('.')[-1]
+                        try:
+                            risk_data['current_impact'] = RiskImpact(impact_str)
+                        except ValueError:
+                            risk_data['current_impact'] = RiskImpact.MEDIUM
+                    
+                    if 'inherent_likelihood' in risk_data and isinstance(risk_data['inherent_likelihood'], str):
+                        likelihood_str = risk_data['inherent_likelihood']
+                        if '.' in likelihood_str:
+                            likelihood_str = likelihood_str.split('.')[-1]
+                        try:
+                            risk_data['inherent_likelihood'] = RiskLikelihood(likelihood_str)
+                        except ValueError:
+                            risk_data['inherent_likelihood'] = RiskLikelihood.MEDIUM
+                    
+                    if 'inherent_impact' in risk_data and isinstance(risk_data['inherent_impact'], str):
+                        impact_str = risk_data['inherent_impact']
+                        if '.' in impact_str:
+                            impact_str = impact_str.split('.')[-1]
+                        try:
+                            risk_data['inherent_impact'] = RiskImpact(impact_str)
+                        except ValueError:
+                            risk_data['inherent_impact'] = RiskImpact.MEDIUM
+                    
+                    if 'residual_likelihood' in risk_data and risk_data['residual_likelihood'] and isinstance(risk_data['residual_likelihood'], str):
+                        likelihood_str = risk_data['residual_likelihood']
+                        if '.' in likelihood_str:
+                            likelihood_str = likelihood_str.split('.')[-1]
+                        try:
+                            risk_data['residual_likelihood'] = RiskLikelihood(likelihood_str)
+                        except ValueError:
+                            risk_data['residual_likelihood'] = None
+                    
+                    if 'residual_impact' in risk_data and risk_data['residual_impact'] and isinstance(risk_data['residual_impact'], str):
+                        impact_str = risk_data['residual_impact']
+                        if '.' in impact_str:
+                            impact_str = impact_str.split('.')[-1]
+                        try:
+                            risk_data['residual_impact'] = RiskImpact(impact_str)
+                        except ValueError:
+                            risk_data['residual_impact'] = None
+                    
+                    # Convert date strings back to date objects
+                    if 'identified_date' in risk_data and isinstance(risk_data['identified_date'], str):
+                        risk_data['identified_date'] = datetime.strptime(risk_data['identified_date'], '%Y-%m-%d').date()
+                    if 'last_assessed_date' in risk_data and risk_data['last_assessed_date'] and isinstance(risk_data['last_assessed_date'], str):
+                        risk_data['last_assessed_date'] = datetime.strptime(risk_data['last_assessed_date'], '%Y-%m-%d').date()
+                    if 'created_date' in risk_data and isinstance(risk_data['created_date'], str):
+                        risk_data['created_date'] = datetime.strptime(risk_data['created_date'], '%Y-%m-%d').date()
+                    if 'updated_date' in risk_data and isinstance(risk_data['updated_date'], str):
+                        risk_data['updated_date'] = datetime.strptime(risk_data['updated_date'], '%Y-%m-%d').date()
+                    
+                    risks.append(Risk(**risk_data))
+                
                 return RiskRegister(
                     organization_id=data.get('organization_id', ''),
                     risks=risks,

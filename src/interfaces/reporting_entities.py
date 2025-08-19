@@ -565,7 +565,7 @@ class ReportingEntitiesInterface:
         with col3:
             st.metric("NIS2 Scope", len(self.manager.get_nis2_entities()))
         with col4:
-            if st.button("🔄 Reset to Defaults", help="Reset all entities to default values"):
+            if st.button("🔄 Reset to Defaults", key="entities_reset_defaults", help="Reset all entities to default values"):
                 self.manager.reset_to_defaults()
                 st.rerun()
         
@@ -818,7 +818,7 @@ class ReportingEntitiesInterface:
         st.info(f"**Jurisdiction:** {entity.jurisdiction.value}")
         st.info(f"**Description:** {entity.description}")
         
-        if st.button("🗑️ Delete Entity", type="secondary"):
+        if st.button("🗑️ Delete Entity", key="entities_delete_entity", type="secondary"):
             if self.manager.delete_entity(selected_entity_id):
                 st.rerun()
 

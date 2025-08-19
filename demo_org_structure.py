@@ -6,7 +6,7 @@ Demonstration script for the new organizational hierarchy:
 - Client organizations - assigned to partners or directly to Cohesive
 """
 
-from auth_system import AuthenticationSystem, UserRole
+from src.core.auth_system import AuthenticationSystem, UserRole
 
 def demo_organization_structure():
     """Demonstrate the new organizational hierarchy."""

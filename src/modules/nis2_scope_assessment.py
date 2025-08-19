@@ -191,11 +191,11 @@ class NIS2ScopeAssessment:
             
             col1, col2 = st.columns(2)
             with col1:
-                if st.button("🔄 Start New Assessment", use_container_width=True):
+                if st.button("🔄 Start New Assessment", key="scope_start_new", use_container_width=True):
                     st.rerun()
             
             with col2:
-                if st.button("🏠 Return to Main Page", use_container_width=True, type="primary"):
+                if st.button("🏠 Return to Main Page", key="scope_return_main", use_container_width=True, type="primary"):
                     # Clear any session state and return to main
                     if 'scope_form_data' in st.session_state:
                         del st.session_state.scope_form_data
@@ -582,11 +582,11 @@ class NIS2ScopeAssessment:
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("📄 Export as PDF"):
+            if st.button("📄 Export as PDF", key="scope_export_pdf"):
                 st.info("PDF export functionality to be implemented")
         
         with col2:
-            if st.button("📊 Export as JSON"):
+            if st.button("📊 Export as JSON", key="scope_export_json"):
                 assessment_dict = {
                     "organization_id": assessment.organization_id,
                     "organization_name": assessment.organization_name,

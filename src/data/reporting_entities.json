@@ -60,8 +60,8 @@
       "DIGITAL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631455",
-    "last_updated": "2025-08-19T17:04:54.631504",
+    "created_date": "2025-08-13T13:51:08.669471",
+    "last_updated": "2025-08-13T13:51:08.669701",
     "notes": ""
   },
   "ncsc_uk": {
@@ -105,8 +105,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631553",
-    "last_updated": "2025-08-19T17:04:54.631565",
+    "created_date": "2025-08-13T13:51:08.669736",
+    "last_updated": "2025-08-13T13:51:08.669741",
     "notes": ""
   },
   "ncsc_belgium": {
@@ -150,8 +150,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631599",
-    "last_updated": "2025-08-19T17:04:54.631607",
+    "created_date": "2025-08-13T13:51:08.669756",
+    "last_updated": "2025-08-13T13:51:08.669758",
     "notes": ""
   },
   "garda_siochana": {
@@ -202,8 +202,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631641",
-    "last_updated": "2025-08-19T17:04:54.631650",
+    "created_date": "2025-08-13T13:51:08.669780",
+    "last_updated": "2025-08-13T13:51:08.669783",
     "notes": ""
   },
   "fbi_cyber": {
@@ -254,8 +254,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631689",
-    "last_updated": "2025-08-19T17:04:54.631699",
+    "created_date": "2025-08-13T13:51:08.669802",
+    "last_updated": "2025-08-13T13:51:08.669805",
     "notes": ""
   },
   "enisa": {
@@ -300,8 +300,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631721",
-    "last_updated": "2025-08-19T17:04:54.631727",
+    "created_date": "2025-08-13T13:51:08.669823",
+    "last_updated": "2025-08-13T13:51:08.669826",
     "notes": ""
   },
   "europol_ec3": {
@@ -345,8 +345,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631743",
-    "last_updated": "2025-08-19T17:04:54.631748",
+    "created_date": "2025-08-13T13:51:08.669839",
+    "last_updated": "2025-08-13T13:51:08.669843",
     "notes": ""
   },
   "dpc_ireland": {
@@ -390,8 +390,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631765",
-    "last_updated": "2025-08-19T17:04:54.631770",
+    "created_date": "2025-08-13T13:51:08.669860",
+    "last_updated": "2025-08-13T13:51:08.669863",
     "notes": ""
   },
   "aig_cyber": {
@@ -442,8 +442,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631791",
-    "last_updated": "2025-08-19T17:04:54.631796",
+    "created_date": "2025-08-13T13:51:08.669884",
+    "last_updated": "2025-08-13T13:51:08.669887",
     "notes": ""
   },
   "chubb_cyber": {
@@ -487,8 +487,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631812",
-    "last_updated": "2025-08-19T17:04:54.631817",
+    "created_date": "2025-08-13T13:51:08.669902",
+    "last_updated": "2025-08-13T13:51:08.669906",
     "notes": ""
   },
   "beazley_cyber": {
@@ -539,8 +539,26 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631835",
-    "last_updated": "2025-08-19T17:04:54.631840",
+    "created_date": "2025-08-13T13:51:08.669919",
+    "last_updated": "2025-08-13T13:51:08.669920",
     "notes": ""
+  },
+  "com_reg_ireland": {
+    "id": "com_reg_ireland",
+    "name": "ComReg Ireland",
+    "entity_type": "Sector-Specific Regulator",
+    "jurisdiction": "Ireland",
+    "description": "Communications Regulator.  ",
+    "website": "www.comreg.ie",
+    "contacts": [],
+    "reporting_requirements": [],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "OTHER"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:57:32.742253",
+    "last_updated": "2025-08-13T13:57:32.742255",
+    "notes": "Handles cybersecuity incident reporting for communications sector\n"
   }
 }
