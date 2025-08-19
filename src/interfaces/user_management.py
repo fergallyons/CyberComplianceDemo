@@ -9,7 +9,7 @@ import sqlite3
 from datetime import datetime
 from typing import Dict, List, Optional
 import plotly.express as px
-from core.auth_system import AuthenticationSystem, UserRole, User, Organization, StreamlitAuth
+from src.core.auth_system import AuthenticationSystem, UserRole, User, Organization, StreamlitAuth
 
 class UserManagementInterface:
     """User management interface for administrators and partners."""

@@ -11,13 +11,13 @@ def test_imports():
     """Test that all required modules can be imported."""
     print("🧪 Testing imports...")
     
-    # Add src to path
-    src_path = Path(__file__).parent / "src"
-    sys.path.insert(0, str(src_path))
+    # Add project root to path
+    project_root = Path(__file__).parent.parent.parent
+    sys.path.insert(0, str(project_root))
     
     try:
         # Test core imports
-        from core.auth_system import AuthenticationSystem
+        from src.core.auth_system import AuthenticationSystem
         print("✅ Core auth_system imported successfully")
     except ImportError as e:
         print(f"❌ Failed to import core.auth_system: {e}")
@@ -25,7 +25,7 @@ def test_imports():
     
     try:
         # Test modules imports
-        from modules.security_controls import SecurityControlsManager
+        from src.modules.security_controls import SecurityControlsManager
         print("✅ Security controls module imported successfully")
     except ImportError as e:
         print(f"❌ Failed to import security_controls: {e}")
@@ -33,7 +33,7 @@ def test_imports():
     
     try:
         # Test interfaces imports
-        from interfaces.user_management import UserManagementInterface
+        from src.interfaces.user_management import UserManagementInterface
         print("✅ User management interface imported successfully")
     except ImportError as e:
         print(f"❌ Failed to import user_management: {e}")
@@ -41,7 +41,7 @@ def test_imports():
     
     try:
         # Test utils imports
-        from utils.data_helpers import format_datetime
+        from src.utils.data_helpers import format_datetime
         print("✅ Utility functions imported successfully")
     except ImportError as e:
         print(f"❌ Failed to import utility functions: {e}")
@@ -49,7 +49,7 @@ def test_imports():
     
     try:
         # Test config imports
-        from config.settings import get_config
+        from src.config.settings import get_config
         print("✅ Configuration imported successfully")
     except ImportError as e:
         print(f"❌ Failed to import configuration: {e}")
@@ -61,7 +61,7 @@ def test_file_paths():
     """Test that all required files and directories exist."""
     print("\n📁 Testing file paths...")
     
-    base_path = Path(__file__).parent
+    base_path = Path(__file__).parent.parent.parent
     
     # Required files
     required_files = [

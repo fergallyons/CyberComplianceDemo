@@ -60,8 +60,8 @@
       "DIGITAL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631455",
-    "last_updated": "2025-08-19T17:04:54.631504",
+    "created_date": "2025-08-19T19:11:51.686447",
+    "last_updated": "2025-08-19T19:11:51.686527",
     "notes": ""
   },
   "ncsc_uk": {
@@ -105,8 +105,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631553",
-    "last_updated": "2025-08-19T17:04:54.631565",
+    "created_date": "2025-08-19T19:11:51.686582",
+    "last_updated": "2025-08-19T19:11:51.686590",
     "notes": ""
   },
   "ncsc_belgium": {
@@ -150,8 +150,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631599",
-    "last_updated": "2025-08-19T17:04:54.631607",
+    "created_date": "2025-08-19T19:11:51.686618",
+    "last_updated": "2025-08-19T19:11:51.686623",
     "notes": ""
   },
   "garda_siochana": {
@@ -202,8 +202,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631641",
-    "last_updated": "2025-08-19T17:04:54.631650",
+    "created_date": "2025-08-19T19:11:51.686652",
+    "last_updated": "2025-08-19T19:11:51.686656",
     "notes": ""
   },
   "fbi_cyber": {
@@ -254,8 +254,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631689",
-    "last_updated": "2025-08-19T17:04:54.631699",
+    "created_date": "2025-08-19T19:11:51.686683",
+    "last_updated": "2025-08-19T19:11:51.686688",
     "notes": ""
   },
   "enisa": {
@@ -300,8 +300,8 @@
       "IMPORTANT"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631721",
-    "last_updated": "2025-08-19T17:04:54.631727",
+    "created_date": "2025-08-19T19:11:51.686705",
+    "last_updated": "2025-08-19T19:11:51.686711",
     "notes": ""
   },
   "europol_ec3": {
@@ -345,8 +345,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631743",
-    "last_updated": "2025-08-19T17:04:54.631748",
+    "created_date": "2025-08-19T19:11:51.686732",
+    "last_updated": "2025-08-19T19:11:51.686736",
     "notes": ""
   },
   "dpc_ireland": {
@@ -390,8 +390,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631765",
-    "last_updated": "2025-08-19T17:04:54.631770",
+    "created_date": "2025-08-19T19:11:51.686755",
+    "last_updated": "2025-08-19T19:11:51.686760",
     "notes": ""
   },
   "aig_cyber": {
@@ -442,8 +442,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631791",
-    "last_updated": "2025-08-19T17:04:54.631796",
+    "created_date": "2025-08-19T19:11:51.686785",
+    "last_updated": "2025-08-19T19:11:51.686790",
     "notes": ""
   },
   "chubb_cyber": {
@@ -487,8 +487,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631812",
-    "last_updated": "2025-08-19T17:04:54.631817",
+    "created_date": "2025-08-19T19:11:51.686812",
+    "last_updated": "2025-08-19T19:11:51.686817",
     "notes": ""
   },
   "beazley_cyber": {
@@ -539,8 +539,8 @@
       "ALL"
     ],
     "active": true,
-    "created_date": "2025-08-19T17:04:54.631835",
-    "last_updated": "2025-08-19T17:04:54.631840",
+    "created_date": "2025-08-19T19:11:51.686840",
+    "last_updated": "2025-08-19T19:11:51.686844",
     "notes": ""
   }
 }
