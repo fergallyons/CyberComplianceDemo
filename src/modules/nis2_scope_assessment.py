@@ -680,7 +680,8 @@ class NIS2ScopeAssessment:
                 
                 print(f"✅ Loaded {len(self.assessments)} scope assessments from {self.assessments_file}")
             else:
-                print(f"ℹ️ No existing scope assessments file found: {self.assessments_file}")
+                # Don't print this message repeatedly - it's expected for new installations
+                pass
         except Exception as e:
             print(f"❌ Error loading scope assessments: {e}")
     

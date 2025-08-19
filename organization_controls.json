@@ -1,1 +1,584 @@
-{}
+{
+  "test_org_001": {
+    "organization_id": "test_org_001",
+    "organization_name": "Test Organization",
+    "assessment_date": "2025-08-19",
+    "assessor": "",
+    "overall_compliance_score": 6.25,
+    "controls_assessed": [
+      {
+        "control_id": "GOV-001",
+        "title": "Information Security Policy",
+        "category": "Governance",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-1.1",
+        "nis2_required": true,
+        "overall_status": "Partially Implemented",
+        "last_assessed": "2025-08-19",
+        "assessor": "Test Assessor",
+        "notes": "Test assessment notes",
+        "sub_controls_assessment": [
+          {
+            "id": "GOV-001-001",
+            "title": "Policy Development",
+            "status": "Implemented",
+            "notes": "Sub-control implemented",
+            "evidence": "Evidence provided",
+            "last_assessed": "2025-08-19",
+            "assessor": "Test Assessor"
+          },
+          {
+            "id": "GOV-001-002",
+            "title": "Policy Communication",
+            "status": "Partially Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": "2025-08-19",
+            "assessor": "Test Assessor"
+          },
+          {
+            "id": "GOV-001-003",
+            "title": "Policy Review and Updates",
+            "status": "Partially Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": "2025-08-19",
+            "assessor": "Test Assessor"
+          }
+        ]
+      },
+      {
+        "control_id": "GOV-002",
+        "title": "Risk Management",
+        "category": "Governance",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-1.2",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "GOV-002-001",
+            "title": "Risk Assessment",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "GOV-002-002",
+            "title": "Risk Treatment",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "TECH-001",
+        "title": "Access Control Management",
+        "category": "Technical",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-2.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "TECH-001-001",
+            "title": "User Authentication",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "TECH-001-002",
+            "title": "Role-Based Access Control",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "TECH-001-003",
+            "title": "Access Monitoring",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "TECH-002",
+        "title": "Network Security",
+        "category": "Technical",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-2.2",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "TECH-002-001",
+            "title": "Network Segmentation",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "TECH-002-002",
+            "title": "Firewall Configuration",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "OPS-001",
+        "title": "Security Operations",
+        "category": "Operational",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-3.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "OPS-001-001",
+            "title": "24/7 Monitoring",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "OPS-001-002",
+            "title": "Incident Response",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "OPS-002",
+        "title": "Business Continuity",
+        "category": "Operational",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-3.2",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "OPS-002-001",
+            "title": "BCP Development",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "OPS-002-002",
+            "title": "BCP Testing",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "PHYS-001",
+        "title": "Physical Security",
+        "category": "Physical",
+        "priority": "Medium",
+        "framework": "CyberFundamentals",
+        "reference": "CF-1.1",
+        "nis2_required": false,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "PHYS-001-001",
+            "title": "Access Control",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "PHYS-001-002",
+            "title": "Environmental Controls",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "SUPPLY-001",
+        "title": "Supply Chain Security",
+        "category": "Supply Chain",
+        "priority": "Medium",
+        "framework": "NIS2",
+        "reference": "NIS2-4.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "SUPPLY-001-001",
+            "title": "Vendor Assessment",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "SUPPLY-001-002",
+            "title": "Contract Security",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      }
+    ]
+  },
+  "1": {
+    "organization_id": "1",
+    "organization_name": "Demo Organization",
+    "assessment_date": "2025-08-19",
+    "assessor": "",
+    "overall_compliance_score": 25.0,
+    "controls_assessed": [
+      {
+        "control_id": "GOV-001",
+        "title": "Information Security Policy",
+        "category": "Governance",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-1.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "GOV-001-001",
+            "title": "Policy Development",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "GOV-001-002",
+            "title": "Policy Communication",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "GOV-001-003",
+            "title": "Policy Review and Updates",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "GOV-002",
+        "title": "Risk Management",
+        "category": "Governance",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-1.2",
+        "nis2_required": true,
+        "overall_status": "Implemented",
+        "last_assessed": "2025-08-19",
+        "assessor": "jsdkjs",
+        "notes": "nsndk",
+        "sub_controls_assessment": [
+          {
+            "id": "GOV-002-001",
+            "title": "Risk Assessment",
+            "status": "Implemented",
+            "notes": "jsjdhs",
+            "evidence": "report",
+            "last_assessed": "2025-08-19",
+            "assessor": "jsdkjs"
+          },
+          {
+            "id": "GOV-002-002",
+            "title": "Risk Treatment",
+            "status": "Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": "2025-08-19",
+            "assessor": "jsdkjs"
+          }
+        ]
+      },
+      {
+        "control_id": "TECH-001",
+        "title": "Access Control Management",
+        "category": "Technical",
+        "priority": "Critical",
+        "framework": "NIS2",
+        "reference": "NIS2-2.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "TECH-001-001",
+            "title": "User Authentication",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "TECH-001-002",
+            "title": "Role-Based Access Control",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "TECH-001-003",
+            "title": "Access Monitoring",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "TECH-002",
+        "title": "Network Security",
+        "category": "Technical",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-2.2",
+        "nis2_required": true,
+        "overall_status": "Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "TECH-002-001",
+            "title": "Network Segmentation",
+            "status": "Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": "2025-08-19",
+            "assessor": ""
+          },
+          {
+            "id": "TECH-002-002",
+            "title": "Firewall Configuration",
+            "status": "Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": "2025-08-19",
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "OPS-001",
+        "title": "Security Operations",
+        "category": "Operational",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-3.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "OPS-001-001",
+            "title": "24/7 Monitoring",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "OPS-001-002",
+            "title": "Incident Response",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "OPS-002",
+        "title": "Business Continuity",
+        "category": "Operational",
+        "priority": "High",
+        "framework": "NIS2",
+        "reference": "NIS2-3.2",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "OPS-002-001",
+            "title": "BCP Development",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "OPS-002-002",
+            "title": "BCP Testing",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "PHYS-001",
+        "title": "Physical Security",
+        "category": "Physical",
+        "priority": "Medium",
+        "framework": "CyberFundamentals",
+        "reference": "CF-1.1",
+        "nis2_required": false,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "PHYS-001-001",
+            "title": "Access Control",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "PHYS-001-002",
+            "title": "Environmental Controls",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      },
+      {
+        "control_id": "SUPPLY-001",
+        "title": "Supply Chain Security",
+        "category": "Supply Chain",
+        "priority": "Medium",
+        "framework": "NIS2",
+        "reference": "NIS2-4.1",
+        "nis2_required": true,
+        "overall_status": "Not Implemented",
+        "last_assessed": null,
+        "assessor": "",
+        "notes": "",
+        "sub_controls_assessment": [
+          {
+            "id": "SUPPLY-001-001",
+            "title": "Vendor Assessment",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          },
+          {
+            "id": "SUPPLY-001-002",
+            "title": "Contract Security",
+            "status": "Not Implemented",
+            "notes": "",
+            "evidence": "",
+            "last_assessed": null,
+            "assessor": ""
+          }
+        ]
+      }
+    ]
+  }
+}
