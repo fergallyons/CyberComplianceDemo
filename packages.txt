@@ -1,24 +1,12 @@
-# System packages required for Streamlit Cloud deployment
-# These are Ubuntu/Debian packages that will be installed in the container
-
-# Python development tools
 python3-dev
 python3-pip
 python3-venv
-
-# Database and system utilities
 sqlite3
 libsqlite3-dev
-
-# Image processing libraries
 libgl1-mesa-glx
 libglib2.0-0
-
-# Font and text rendering
 fonts-liberation
 libfontconfig1
-
-# Additional system libraries
 libgomp1
 libxext6
 libxrender1
