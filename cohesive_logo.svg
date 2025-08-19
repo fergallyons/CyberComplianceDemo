@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Main Shield -->
+  <g transform="translate(400,120)" filter="url(#shadow)">
+    <!-- Shield Base -->
+    <path d="M-80,-100 L-60,-100 L-40,-80 L-20,-60 L0,-40 L20,-60 L40,-80 L60,-100 L80,-100 L80,100 L-80,100 Z" 
+          fill="url(#shieldGradient)" stroke="#1E3A8A" stroke-width="2"/>
+    
+    <!-- Left Half - Dark Blue with Circuit Board -->
+    <g opacity="0.9">
+      <!-- Circuit lines left side -->
+      <path d="M-70,-80 L-50,-80 L-50,-60 L-30,-60 L-30,-40 L-10,-40" 
+            stroke="#1E3A8A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-70,-40 L-50,-40 L-50,-20 L-30,-20 L-30,0 L-10,0" 
+            stroke="#1E3A8A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-70,0 L-50,0 L-50,20 L-30,20 L-30,40 L-10,40" 
+            stroke="#1E3A8A" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-70,40 L-50,40 L-50,60 L-30,60 L-30,80 L-10,80" 
+            stroke="#1E3A8A" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Circuit nodes left side -->
+      <circle cx="-70" cy="-80" r="4" fill="#3B82F6"/>
+      <circle cx="-50" cy="-60" r="4" fill="#3B82F6"/>
+      <circle cx="-30" cy="-40" r="4" fill="#3B82F6"/>
+      <circle cx="-10" cy="-40" r="4" fill="#3B82F6"/>
+      <circle cx="-70" cy="-40" r="4" fill="#3B82F6"/>
+      <circle cx="-50" cy="-20" r="4" fill="#3B82F6"/>
+      <circle cx="-30" cy="0" r="4" fill="#3B82F6"/>
+      <circle cx="-10" cy="0" r="4" fill="#3B82F6"/>
+      <circle cx="-70" cy="0" r="4" fill="#3B82F6"/>
+      <circle cx="-50" cy="20" r="4" fill="#3B82F6"/>
+      <circle cx="-30" cy="40" r="4" fill="#3B82F6"/>
+      <circle cx="-10" cy="40" r="4" fill="#3B82F6"/>
+      <circle cx="-70" cy="40" r="4" fill="#3B82F6"/>
+      <circle cx="-50" cy="60" r="4" fill="#3B82F6"/>
+      <circle cx="-30" cy="80" r="4" fill="#3B82F6"/>
+      <circle cx="-10" cy="80" r="4" fill="#3B82F6"/>
+    </g>
+    
+    <!-- Right Half - Light Blue/Teal with Green Circuit Board -->
+    <g opacity="0.9">
+      <!-- Circuit lines right side -->
+      <path d="M70,-80 L50,-80 L50,-60 L30,-60 L30,-40 L10,-40" 
+            stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+      <path d="M70,-40 L50,-40 L50,-20 L30,-20 L30,0 L10,0" 
+            stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+      <path d="M70,0 L50,0 L50,20 L30,20 L30,40 L10,40" 
+            stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+      <path d="M70,40 L50,40 L50,60 L30,60 L30,80 L10,80" 
+            stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Circuit nodes right side -->
+      <circle cx="70" cy="-80" r="4" fill="#10B981"/>
+      <circle cx="50" cy="-60" r="4" fill="#10B981"/>
+      <circle cx="30" cy="-40" r="4" fill="#10B981"/>
+      <circle cx="10" cy="-40" r="4" fill="#10B981"/>
+      <circle cx="70" cy="-40" r="4" fill="#10B981"/>
+      <circle cx="50" cy="-20" r="4" fill="#10B981"/>
+      <circle cx="30" cy="0" r="4" fill="#10B981"/>
+      <circle cx="10" cy="0" r="4" fill="#10B981"/>
+      <circle cx="70" cy="0" r="4" fill="#10B981"/>
+      <circle cx="50" cy="20" r="4" fill="#10B981"/>
+      <circle cx="30" cy="40" r="4" fill="#10B981"/>
+      <circle cx="10" cy="40" r="4" fill="#10B981"/>
+      <circle cx="70" cy="40" r="4" fill="#10B981"/>
+      <circle cx="50" cy="60" r="4" fill="#10B981"/>
+      <circle cx="30" cy="80" r="4" fill="#10B981"/>
+      <circle cx="10" cy="80" r="4" fill="#10B981"/>
+    </g>
+    
+    <!-- Central "C" Element -->
+    <g transform="translate(0,0)">
+      <path d="M-20,-30 A30,30 0 0 1 -20,30" 
+            stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <!-- Connect to circuit lines -->
+      <path d="M-20,-30 L-10,-40" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <path d="M-20,30 L-10,40" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Company Name -->
+  <g transform="translate(400,200)">
+    <text x="0" y="0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="48" font-weight="700" 
+          fill="#1E3A8A" text-anchor="middle" letter-spacing="2">
+      COHESIVE
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <g transform="translate(400,230)">
+    <text x="0" y="0" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" font-weight="500" 
+          fill="#374151" text-anchor="middle" letter-spacing="1">
+      CYBERSECURITY COMPLIANCE
+    </text>
+  </g>
+</svg>

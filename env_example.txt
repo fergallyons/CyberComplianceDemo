@@ -1,0 +1,44 @@
+# Environment Configuration for Cybersecurity Reporting Workspace
+# Copy this file to .env and fill in your actual values
+
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Database Configuration
+DATABASE_URL=sqlite:///cybersecurity_users.db
+
+# Email Configuration for Incident Reporting
+# Gmail Example (recommended for testing)
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your_email@gmail.com
+SMTP_PASSWORD=your_app_password_here
+SMTP_USE_TLS=true
+SMTP_USE_SSL=false
+SENDER_NAME=NIS2 Incident Reporting System
+SENDER_EMAIL=your_email@gmail.com
+
+# Office 365 Example
+# SMTP_SERVER=smtp.office365.com
+# SMTP_PORT=587
+# SMTP_USERNAME=your_email@company.com
+# SMTP_PASSWORD=your_password_here
+# SMTP_USE_TLS=true
+# SMTP_USE_SSL=false
+# SENDER_NAME=NIS2 Incident Reporting System
+# SENDER_EMAIL=your_email@company.com
+
+# Custom SMTP Server Example
+# SMTP_SERVER=mail.yourcompany.com
+# SMTP_PORT=587
+# SMTP_USERNAME=incidents@yourcompany.com
+# SMTP_PASSWORD=your_password_here
+# SMTP_USE_TLS=true
+# SMTP_USE_SSL=false
+# SENDER_NAME=NIS2 Incident Reporting System
+# SENDER_EMAIL=incidents@yourcompany.com
+
+# Note: For Gmail, you need to:
+# 1. Enable 2-factor authentication
+# 2. Generate an App Password
+# 3. Use the App Password instead of your regular password

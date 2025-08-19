@@ -1,0 +1,6 @@
+{
+  "ID-AM-1": {
+    "id": "ID-AM-1",
+    "name": "Asset Inventory Management",
+    "description": "Maintain an inventory of all assets including hardware, software, and data",
+    "category": 

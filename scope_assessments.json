@@ -1,0 +1,126 @@
+{
+  "1": {
+    "organization_id": "1",
+    "organization_name": "Cohesive",
+    "assessment_date": "2025-08-18T12:04:07.749241",
+    "sector_type": "digital",
+    "organization_size": "medium",
+    "in_scope": false,
+    "reporting_obligations": [
+      "No mandatory reporting obligations under NIS2"
+    ],
+    "assessment_score": 48,
+    "risk_factors": [
+      "High essential service provision exposure",
+      "Critical infrastructure dependency",
+      "Supply chain criticality"
+    ],
+    "recommendations": [
+      "Monitor NIS2 developments",
+      "Consider voluntary compliance",
+      "Implement security best practices",
+      "Regular security assessments"
+    ],
+    "next_steps": [
+      "Continue monitoring NIS2 developments",
+      "Implement security best practices",
+      "Consider voluntary compliance",
+      "Regular security assessments"
+    ]
+  },
+  "3": {
+    "organization_id": "3",
+    "organization_name": "CRH",
+    "assessment_date": "2025-08-18T21:26:57.201199",
+    "sector_type": "important",
+    "organization_size": "large",
+    "in_scope": true,
+    "reporting_obligations": [
+      "Report significant incidents within 24 hours of detection",
+      "Submit initial incident report",
+      "Provide intermediate updates as required",
+      "Submit final incident report",
+      "Maintain incident records for at least 3 years"
+    ],
+    "assessment_score": 98,
+    "risk_factors": [
+      "High critical infrastructure dependency exposure",
+      "High supply chain criticality exposure",
+      "High geographic concentration exposure",
+      "High market dominance exposure",
+      "High cross-border services exposure",
+      "High essential service provision exposure",
+      "High user base size exposure",
+      "Critical infrastructure dependency",
+      "Supply chain criticality",
+      "Cross-border operational complexity"
+    ],
+    "recommendations": [
+      "Implement NIS2 compliance framework",
+      "Establish incident response procedures",
+      "Conduct regular security assessments",
+      "Train staff on incident reporting",
+      "Develop business continuity plans"
+    ],
+    "next_steps": [
+      "Register with relevant national authority",
+      "Appoint NIS2 compliance officer",
+      "Develop incident response plan",
+      "Implement security monitoring tools",
+      "Conduct gap analysis against NIS2 requirements"
+    ]
+  },
+  "5": {
+    "organization_id": "5",
+    "organization_name": "Aer Lingus",
+    "assessment_date": "2025-08-18T23:13:18.246702",
+    "sector_type": "essential",
+    "organization_size": "large",
+    "in_scope": true,
+    "reporting_obligations": [
+      "Report significant incidents within 24 hours of detection",
+      "Submit initial incident report",
+      "Provide intermediate updates as required",
+      "Submit final incident report",
+      "Maintain incident records for at least 3 years",
+      "Enhanced reporting requirements",
+      "Regular security assessments",
+      "Compliance audits"
+    ],
+    "assessment_score": 112,
+    "risk_factors": [
+      "High critical infrastructure dependency exposure",
+      "High supply chain criticality exposure",
+      "High geographic concentration exposure",
+      "High market dominance exposure",
+      "High cross-border services exposure",
+      "High essential service provision exposure",
+      "High data processing volume exposure",
+      "High user base size exposure",
+      "Critical infrastructure dependency",
+      "Supply chain criticality",
+      "Cross-border operational complexity"
+    ],
+    "recommendations": [
+      "Implement NIS2 compliance framework",
+      "Establish incident response procedures",
+      "Conduct regular security assessments",
+      "Train staff on incident reporting",
+      "Develop business continuity plans",
+      "Implement enhanced security controls",
+      "Establish 24/7 security monitoring",
+      "Conduct penetration testing",
+      "Implement zero-trust architecture"
+    ],
+    "next_steps": [
+      "Register with relevant national authority",
+      "Appoint NIS2 compliance officer",
+      "Develop incident response plan",
+      "Implement security monitoring tools",
+      "Conduct gap analysis against NIS2 requirements",
+      "Establish security operations center",
+      "Implement advanced threat detection",
+      "Develop crisis communication plan"
+    ]
+  }
+}

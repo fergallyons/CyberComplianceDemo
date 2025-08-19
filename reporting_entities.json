@@ -1,0 +1,564 @@
+{
+  "ncsc_ireland": {
+    "id": "ncsc_ireland",
+    "name": "NCSC Ireland",
+    "entity_type": "Regulatory Body",
+    "jurisdiction": "Ireland",
+    "description": "National Cyber Security Centre Ireland - Primary cybersecurity regulator for Ireland",
+    "website": "https://ncsc.gov.ie/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "incidents@ncsc.gov.ie",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "+353 1 631 2000",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://ncsc.gov.ie/report-incident/",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Significant Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "impact_assessment",
+          "containment_measures"
+        ],
+        "mandatory": true,
+        "notes": ""
+      },
+      {
+        "incident_type": "Final Report",
+        "timeframe_hours": 72,
+        "required_fields": [
+          "root_cause",
+          "remediation_actions",
+          "lessons_learned"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": true,
+    "sectors_covered": [
+      "ESSENTIAL",
+      "IMPORTANT",
+      "DIGITAL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669471",
+    "last_updated": "2025-08-13T13:51:08.669701",
+    "notes": ""
+  },
+  "ncsc_uk": {
+    "id": "ncsc_uk",
+    "name": "NCSC UK",
+    "entity_type": "Regulatory Body",
+    "jurisdiction": "United Kingdom",
+    "description": "National Cyber Security Centre United Kingdom",
+    "website": "https://www.ncsc.gov.uk/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "incidents@ncsc.gov.uk",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://www.ncsc.gov.uk/report-an-incident",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Significant Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "impact_assessment"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": true,
+    "sectors_covered": [
+      "ESSENTIAL",
+      "IMPORTANT"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669736",
+    "last_updated": "2025-08-13T13:51:08.669741",
+    "notes": ""
+  },
+  "ncsc_belgium": {
+    "id": "ncsc_belgium",
+    "name": "CCB Belgium",
+    "entity_type": "Regulatory Body",
+    "jurisdiction": "Belgium",
+    "description": "Centre for Cybersecurity Belgium",
+    "website": "https://ccb.belgium.be/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "incidents@ccb.belgium.be",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "+32 2 790 33 00",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Significant Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "impact_assessment"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": true,
+    "sectors_covered": [
+      "ESSENTIAL",
+      "IMPORTANT"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669756",
+    "last_updated": "2025-08-13T13:51:08.669758",
+    "notes": ""
+  },
+  "garda_siochana": {
+    "id": "garda_siochana",
+    "name": "Garda Síochána",
+    "entity_type": "Law Enforcement",
+    "jurisdiction": "Ireland",
+    "description": "Irish Police Force - Cybercrime Unit",
+    "website": "https://www.garda.ie/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "cybercrime@garda.ie",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "1800 666 111",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://www.garda.ie/en/contact-us/online-reporting/",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cybercrime",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "crime_description",
+          "evidence_preservation",
+          "victim_details"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669780",
+    "last_updated": "2025-08-13T13:51:08.669783",
+    "notes": ""
+  },
+  "fbi_cyber": {
+    "id": "fbi_cyber",
+    "name": "FBI Cyber Division",
+    "entity_type": "Law Enforcement",
+    "jurisdiction": "United States",
+    "description": "Federal Bureau of Investigation Cyber Division",
+    "website": "https://www.fbi.gov/investigate/cyber",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "cyber@fbi.gov",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://www.ic3.gov/",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "1-800-CALL-FBI",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cyber Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "financial_loss",
+          "victim_details"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669802",
+    "last_updated": "2025-08-13T13:51:08.669805",
+    "notes": ""
+  },
+  "enisa": {
+    "id": "enisa",
+    "name": "ENISA",
+    "entity_type": "Regulatory Body",
+    "jurisdiction": "European Union",
+    "description": "European Union Agency for Cybersecurity",
+    "website": "https://www.enisa.europa.eu/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "incidents@enisa.europa.eu",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://www.enisa.europa.eu/report-incident",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cross-border Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "affected_countries",
+          "coordination_needs"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": true,
+    "sectors_covered": [
+      "ESSENTIAL",
+      "IMPORTANT"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669823",
+    "last_updated": "2025-08-13T13:51:08.669826",
+    "notes": ""
+  },
+  "europol_ec3": {
+    "id": "europol_ec3",
+    "name": "Europol EC3",
+    "entity_type": "Law Enforcement",
+    "jurisdiction": "European Union",
+    "description": "European Cybercrime Centre",
+    "website": "https://www.europol.europa.eu/ec3",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "ec3@europol.europa.eu",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Web Form",
+        "value": "https://www.europol.europa.eu/report-cybercrime",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cross-border Cybercrime",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "crime_description",
+          "affected_countries",
+          "evidence"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669839",
+    "last_updated": "2025-08-13T13:51:08.669843",
+    "notes": ""
+  },
+  "dpc_ireland": {
+    "id": "dpc_ireland",
+    "name": "Data Protection Commission Ireland",
+    "entity_type": "Data Protection Authority",
+    "jurisdiction": "Ireland",
+    "description": "Irish Data Protection Authority",
+    "website": "https://www.dataprotection.ie/",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "info@dataprotection.ie",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "+353 57 868 4800",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Data Breach",
+        "timeframe_hours": 72,
+        "required_fields": [
+          "breach_description",
+          "personal_data_affected",
+          "risk_assessment"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669860",
+    "last_updated": "2025-08-13T13:51:08.669863",
+    "notes": ""
+  },
+  "aig_cyber": {
+    "id": "aig_cyber",
+    "name": "AIG Cyber Insurance",
+    "entity_type": "Cyber Insurance",
+    "jurisdiction": "International",
+    "description": "AIG CyberEdge Cyber Liability Insurance",
+    "website": "https://www.aig.com/cyber-insurance",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "cyberclaims@aig.com",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "1-800-528-3662",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Online Portal",
+        "value": "https://www.aig.com/claims",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cyber Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "policy_number",
+          "financial_impact"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669884",
+    "last_updated": "2025-08-13T13:51:08.669887",
+    "notes": ""
+  },
+  "chubb_cyber": {
+    "id": "chubb_cyber",
+    "name": "Chubb Cyber Insurance",
+    "entity_type": "Cyber Insurance",
+    "jurisdiction": "International",
+    "description": "Chubb Cyber Enterprise Risk Management",
+    "website": "https://www.chubb.com/cyber",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "cyberclaims@chubb.com",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "1-800-252-4670",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Cyber Incident",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "incident_description",
+          "policy_number",
+          "damage_assessment"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669902",
+    "last_updated": "2025-08-13T13:51:08.669906",
+    "notes": ""
+  },
+  "beazley_cyber": {
+    "id": "beazley_cyber",
+    "name": "Beazley Cyber Insurance",
+    "entity_type": "Cyber Insurance",
+    "jurisdiction": "International",
+    "description": "Beazley Breach Response Cyber Insurance",
+    "website": "https://www.beazley.com/cyber",
+    "contacts": [
+      {
+        "method": "Email",
+        "value": "breach@beazley.com",
+        "primary": true,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Phone",
+        "value": "1-800-409-9511",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      },
+      {
+        "method": "Online Portal",
+        "value": "https://www.beazley.com/breach-response",
+        "primary": false,
+        "notes": "",
+        "last_verified": null
+      }
+    ],
+    "reporting_requirements": [
+      {
+        "incident_type": "Data Breach",
+        "timeframe_hours": 24,
+        "required_fields": [
+          "breach_description",
+          "policy_number",
+          "affected_records"
+        ],
+        "mandatory": true,
+        "notes": ""
+      }
+    ],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "ALL"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:51:08.669919",
+    "last_updated": "2025-08-13T13:51:08.669920",
+    "notes": ""
+  },
+  "com_reg_ireland": {
+    "id": "com_reg_ireland",
+    "name": "ComReg Ireland",
+    "entity_type": "Sector-Specific Regulator",
+    "jurisdiction": "Ireland",
+    "description": "Communications Regulator.  ",
+    "website": "www.comreg.ie",
+    "contacts": [],
+    "reporting_requirements": [],
+    "nis2_scope": false,
+    "sectors_covered": [
+      "OTHER"
+    ],
+    "active": true,
+    "created_date": "2025-08-13T13:57:32.742253",
+    "last_updated": "2025-08-13T13:57:32.742255",
+    "notes": "Handles cybersecuity incident reporting for communications sector\n"
+  }
+}

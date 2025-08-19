@@ -1,0 +1,214 @@
+{
+  "015e1453": {
+    "id": "015e1453",
+    "title": "Scattered Spider Attack",
+    "description": "social engineered attack led to credential exposure followed by critical systems penetration",
+    "category": "phishing_social_engineering",
+    "severity": "significant",
+    "status": "detected",
+    "timeline": {
+      "detection_time": "2025-08-18T11:00:00",
+      "initial_report_time": "2025-08-18T11:12:31.978236",
+      "intermediate_reports": [],
+      "final_report_time": null,
+      "resolution_time": null,
+      "closure_time": null
+    },
+    "affected_services": [
+      "Network Infrastructure",
+      "Cloud Services",
+      "Digital Services"
+    ],
+    "affected_entities": [],
+    "threat_intelligence_input": "",
+    "impact_assessment": "Severe",
+    "containment_measures": [
+      "Disable affected user credential"
+    ],
+    "remediation_actions": [],
+    "lessons_learned": "",
+    "reported_to_authorities": true,
+    "authority_report_date": "2025-08-18T11:12:31.978240",
+    "organization_id": "Cohesive",
+    "assigned_to": "Operator 1",
+    "threat_intelligence": {
+      "indicators": [],
+      "malware_families": [],
+      "attack_vectors": [],
+      "threat_actors": [],
+      "ioc_sources": {},
+      "risk_score": 0,
+      "confidence_level": "Low",
+      "last_updated": null
+    },
+    "vulnerabilities": [],
+    "report_recipients": [],
+    "email_sent": false,
+    "email_sent_date": null
+  },
+  "3c21f845": {
+    "id": "3c21f845",
+    "title": "Cobalt strike",
+    "description": "System take down",
+    "category": "malware_ransomware",
+    "severity": "significant",
+    "status": "detected",
+    "timeline": {
+      "detection_time": "2025-08-18T11:40:00",
+      "initial_report_time": "2025-08-18T11:40:46.286020",
+      "intermediate_reports": [],
+      "final_report_time": null,
+      "resolution_time": null,
+      "closure_time": null
+    },
+    "affected_services": [
+      "Data Centers",
+      "Essential Services",
+      "Network Infrastructure"
+    ],
+    "affected_entities": [],
+    "threat_intelligence_input": "",
+    "impact_assessment": "severe",
+    "containment_measures": [
+      "192.168.2.2"
+    ],
+    "remediation_actions": [],
+    "lessons_learned": "",
+    "reported_to_authorities": true,
+    "authority_report_date": "2025-08-18T11:40:46.286024",
+    "organization_id": "Cohesive",
+    "assigned_to": "FL",
+    "threat_intelligence": {
+      "indicators": [],
+      "malware_families": [],
+      "attack_vectors": [],
+      "threat_actors": [],
+      "ioc_sources": {},
+      "risk_score": 30,
+      "confidence_level": "Low",
+      "last_updated": "2025-08-18T11:40:46.286433"
+    },
+    "vulnerabilities": [],
+    "report_recipients": [],
+    "email_sent": false,
+    "email_sent_date": null
+  },
+  "7f208887": {
+    "id": "7f208887",
+    "title": "attack 2",
+    "description": "jshdjs",
+    "category": "vulnerability_exploitation",
+    "severity": "major",
+    "status": "detected",
+    "timeline": {
+      "detection_time": "2025-08-18T18:22:00",
+      "initial_report_time": "2025-08-18T18:22:10.823003",
+      "intermediate_reports": [],
+      "final_report_time": null,
+      "resolution_time": null,
+      "closure_time": null
+    },
+    "affected_services": [
+      "Cloud Services"
+    ],
+    "affected_entities": [
+      "192.168.1.1"
+    ],
+    "threat_intelligence_input": "8.8.8.8",
+    "impact_assessment": "ksjdkjs",
+    "containment_measures": [
+      "shut down"
+    ],
+    "remediation_actions": [],
+    "lessons_learned": "",
+    "reported_to_authorities": true,
+    "authority_report_date": "2025-08-18T18:22:10.823006",
+    "organization_id": "1",
+    "assigned_to": "FL",
+    "threat_intelligence": {
+      "indicators": [
+        "8.8.8.8"
+      ],
+      "malware_families": [],
+      "attack_vectors": [],
+      "threat_actors": [],
+      "ioc_sources": {
+        "AbuseIPDB": "https://www.abuseipdb.com/check/8.8.8.8",
+        "Shodan": "https://shodan.io/host/8.8.8.8"
+      },
+      "risk_score": 65,
+      "confidence_level": "Low",
+      "last_updated": "2025-08-18T18:22:10.823496"
+    },
+    "vulnerabilities": [
+      {
+        "cve_id": "CVE-2025-32756",
+        "description": "CVE-2025-32756 - Fortinet RCE Exploited",
+        "severity": "Unknown",
+        "cvss_score": null,
+        "affected_products": [],
+        "exploitation_status": "Unknown",
+        "patch_available": false,
+        "references": [
+          "https://vulnerability-database.enisa.europa.eu/vulnerability/CVE-2025-32756",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-32756"
+        ]
+      }
+    ],
+    "report_recipients": [],
+    "email_sent": false,
+    "email_sent_date": null
+  },
+  "bb1b322b": {
+    "id": "bb1b322b",
+    "title": "CRH1",
+    "description": "Insider used elevated privileges to access corporate secrets including financials",
+    "category": "insider_threat",
+    "severity": "critical",
+    "status": "detected",
+    "timeline": {
+      "detection_time": "2025-08-18T21:20:00",
+      "initial_report_time": "2025-08-18T21:20:30.222186",
+      "intermediate_reports": [],
+      "final_report_time": null,
+      "resolution_time": null,
+      "closure_time": null
+    },
+    "affected_services": [
+      "Digital Services",
+      "Essential Services",
+      "Cloud Services"
+    ],
+    "affected_entities": [],
+    "threat_intelligence_input": "8.8.8.8",
+    "impact_assessment": "Data leakage, customer infromation compromised",
+    "containment_measures": [
+      "Fire employee"
+    ],
+    "remediation_actions": [],
+    "lessons_learned": "",
+    "reported_to_authorities": true,
+    "authority_report_date": "2025-08-18T21:20:30.222189",
+    "organization_id": "3",
+    "assigned_to": "FL",
+    "threat_intelligence": {
+      "indicators": [
+        "8.8.8.8"
+      ],
+      "malware_families": [],
+      "attack_vectors": [],
+      "threat_actors": [],
+      "ioc_sources": {
+        "AbuseIPDB": "https://www.abuseipdb.com/check/8.8.8.8",
+        "Shodan": "https://shodan.io/host/8.8.8.8"
+      },
+      "risk_score": 95,
+      "confidence_level": "Low",
+      "last_updated": "2025-08-18T21:20:30.223099"
+    },
+    "vulnerabilities": [],
+    "report_recipients": [],
+    "email_sent": false,
+    "email_sent_date": null
+  }
+}
