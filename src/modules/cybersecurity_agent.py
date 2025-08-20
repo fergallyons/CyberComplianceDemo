@@ -949,12 +949,13 @@ def main():
     #     ...
     
     # Main content tabs
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
         "📊 Dashboard", 
         "🚨 Incident Reporting", 
         "🛡️ Security Controls", 
         "🛡️ Risk Management",
         "🔍 Scope Assessment", 
+        "👥 User Management",
         "⚙️ Settings"
     ])
     
@@ -1307,6 +1308,13 @@ def main():
         agent.nis2_scope_assessment.display_main_interface(str(current_org.id))
     
     with tab6:
+        # User Management content - no header needed
+        if current_user.role.value in ['admin', 'partner']:
+            agent.user_management.display_user_management_dashboard(current_user)
+        else:
+            st.error("You don't have permission to access user management.")
+    
+    with tab7:
         # Settings content - no header needed
         if current_user.role.value in ['admin', 'partner']:
             if current_user.role.value == 'admin':
